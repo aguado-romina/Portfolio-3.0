@@ -124,10 +124,14 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(255, 117, 57, 0.8), rgba(195, 0, 0, 0.8)), url(../img/blackDog.jpg);
+  background-image: linear-gradient(51deg, #25bfcb, #e628a4);
   background-size: cover;
   background-position: top;
   position: relative; }
+  @supports (-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0)) {
+    .header {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0%, 100% 60%, 50% 100%, 0% 60%); } }
   .header__logo-box {
     position: absolute;
     top: 4rem;
