@@ -14,11 +14,11 @@ body {
   padding: 3rem; }
 
 ::-moz-selection {
-  background-color: #ff3d00;
+  background-color: #e628a4;
   color: #fff; }
 
 ::selection {
-  background-color: #ff3d00;
+  background-color: #e628a4;
   color: #fff; }
 
 body {
@@ -63,7 +63,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #ff7539, #c30000);
+  background-image: linear-gradient(to right, #ff45be, #990d68);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 2px;
@@ -122,28 +122,108 @@ body {
   .row .col-3-of-4 {
     width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
-.header {
-  height: 95vh;
-  background-image: linear-gradient(51deg, #25bfcb, #e628a4);
-  background-size: cover;
-  background-position: top;
-  position: relative; }
-  @supports (-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0)) {
-    .header {
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-      clip-path: polygon(0 0, 100% 0%, 100% 60%, 50% 100%, 0% 60%); } }
-  .header__logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem; }
-  .header__logo {
-    height: 3.5rem; }
-  .header__text-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-55%, -55%);
-    text-align: center; }
+/*
+background-image: linear-gradient(51deg, #25bfcb, #e628a4);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 60%, 50% 100%, 0 60%);
+  clip-path: polygon(0 0, 100% 0%, 100% 60%, 50% 100%, 0 60%);
+
+
+*/
+.page-content {
+  margin-right: auto;
+  margin-left: auto; }
+
+.banner {
+  position: relative;
+  display: flex;
+  padding: 300px 5% 190px;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(91deg, #25bfcb, #e628a4);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 60%, 50% 100%, 0 60%);
+  clip-path: polygon(0 0, 100% 0%, 100% 60%, 50% 100%, 0 60%);
+  background-position: 120% 100%, 0px 0px;
+  background-size: contain, auto;
+  background-repeat: no-repeat, repeat; }
+
+.container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  flex: 1; }
+
+.w-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 940px; }
+
+.w-container:before,
+.w-container:after {
+  content: " ";
+  display: table;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column-end: 2;
+  grid-row-end: 2; }
+
+.hero-grid {
+  display: -ms-grid;
+  display: grid;
+  align-items: center;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto; }
+
+.left-part {
+  margin-top: -80px;
+  margin-left: -80px; }
+
+.photo-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 80%; }
+
+.big-text {
+  position: absolute;
+  left: auto;
+  top: 0%;
+  right: 32px;
+  bottom: 0%;
+  transform: rotate(90deg);
+  color: rgba(255, 255, 255, 0.05);
+  font-size: 80px;
+  line-height: 10px;
+  letter-spacing: 15px; }
+
+.hero-title {
+  width: 89%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #fff;
+  font-size: 65px;
+  line-height: 57px; }
+
+.top-margin.more {
+  margin-top: 40px; }
+
+.button {
+  padding: 20px 35px;
+  border-radius: 30px;
+  background-color: #e628a4;
+  transition: all 300ms ease;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer; }
 
 .section-about {
   background-color: #f7f7f7f7;
@@ -152,7 +232,7 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(255, 117, 57, 0.8), rgba(195, 0, 0, 0.8)), url(../img/nat-4.jpg);
+  background-image: linear-gradient(to right bottom, rgba(255, 69, 190, 0.8), rgba(153, 13, 104, 0.8)), url(../img/nat-4.jpg);
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -11rem; }
@@ -170,7 +250,7 @@ body {
 
 .section-book {
   padding: 15rem 0;
-  background-image: linear-gradient(to right bottom, #ff7539, #c30000); }
+  background-image: linear-gradient(to right bottom, #ff45be, #990d68); }
 
 .book {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
