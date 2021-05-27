@@ -263,10 +263,11 @@ body {
     width: 15rem;
     height: auto; }
   .footer__navigation {
-    padding-top: 2rem;
+    padding-top: 0.5rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    grid-gap: 2rem;
+    grid-template-columns: repeat(4, minmax(20rem, 1fr));
+    display: grid;
+    grid-gap: 0.5rem;
     align-items: center; }
     @media only screen and (max-width: 56.25em) {
       .footer__navigation {
@@ -289,13 +290,12 @@ body {
   .footer__link:hover, .footer__link:active {
     color: #e628a4; }
   .footer__copyright {
-    border-top: 1px solid #777;
     padding-top: 2rem;
-    margin-top: 6rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
     margin-right: auto;
     margin-left: auto;
-    text-align: center;
-    width: 70%; }
+    text-align: center; }
     @media only screen and (max-width: 56.25em) {
       .footer__copyright {
         width: 100%;
