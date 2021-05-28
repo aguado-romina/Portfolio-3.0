@@ -248,7 +248,7 @@ body {
   color: #f7f7f7f7;
   padding: 10rem 0;
   font-size: 2.4rem;
-  grid-column: full-start / full-end; }
+  grid-column: center-start / col-end 8; }
   @media only screen and (max-width: 56.25em) {
     .footer {
       padding: 8rem 0; } }
@@ -295,6 +295,9 @@ body {
   grid-template-rows: 80vh repeat(4, -webkit-min-content);
   grid-template-rows: 80vh repeat(4, min-content);
   grid-template-columns: [center-start] repeat(7, [col-start] minmax(-webkit-min-content, 1fr) [col-end]) [center-end] 1fr;
+  grid-template-columns: [center-start] repeat(8, [col-start] minmax(-webkit-min-content, 1fr) [col-end]) [center-end] 1fr;
+  grid-template-columns: [center-start] repeat(7, [col-start] minmax(-webkit-min-content, 1fr) [col-end]) [center-end] 1fr;
+  grid-template-columns: [center-start] repeat(7, [col-start] minmax(-webkit-min-content, 1fr) [col-end]) [center-end] 1fr;
   grid-template-columns: [center-start] repeat(7, [col-start] minmax(min-content, 1fr) [col-end]) [center-end] 1fr; }
 
 /*
@@ -305,14 +308,13 @@ background-image: linear-gradient(51deg, #25bfcb, #e628a4);
 
 */
 .header {
-  height: 95vh;
   background-image: linear-gradient(51deg, #25bfcb, #e628a4);
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 60%, 50% 100%, 0 60%);
   clip-path: polygon(0 0, 100% 0%, 100% 60%, 50% 100%, 0 60%);
   background-size: cover;
   background-position: top;
   position: relative;
-  grid-column: 1 / -1; }
+  grid-column: center-start / col-end 8; }
   .header__text-box {
     position: absolute;
     top: 40%;
@@ -321,16 +323,21 @@ background-image: linear-gradient(51deg, #25bfcb, #e628a4);
     text-align: center; }
 
 .skillsset {
-  background-color: red; }
+  background-color: red;
+  grid-column: center-start / col-end 4; }
 
 .projects {
-  background-color: blue; }
+  background-color: blue;
+  grid-column: col-start 5 / col-end 8; }
 
-.aboutme__photos {
-  background-color: yellow; }
+.aboutmephotos {
+  background-color: yellow;
+  grid-column: center-start / col-end 4; }
 
-.aboutme__text {
-  background-color: purple; }
+.aboutmetext {
+  background-color: purple;
+  grid-column: col-start 5 / col-end 8; }
 
 .contact {
-  background-color: salmon; }
+  background-color: salmon;
+  grid-column: center-start / col-end 8; }

@@ -4,7 +4,7 @@
   color: $color-gray-light-1;
   padding: 10rem 0;
   font-size: 2.4rem;
-  grid-column: full-start / full-end;
+  grid-column: center-start / col-end 8;
 
   @include respond(tab-port) {
     padding: 8rem 0;

@@ -1,21 +1,24 @@
 .skillsset {
   background-color: red;
+  grid-column: center-start / col-end 4;
 }
 
 .projects {
   background-color: blue;
+  grid-column: col-start 5 / col-end 8;
 }
 
-.aboutme {
-  &__photos {
-    background-color: yellow;
-  }
+.aboutmephotos {
+  background-color: yellow;
+  grid-column: center-start / col-end 4;
+}
 
-  &__text {
-    background-color: purple;
-  }
+.aboutmetext {
+  background-color: purple;
+  grid-column: col-start 5 / col-end 8;
 }
 
 .contact {
   background-color: salmon;
+  grid-column: center-start / col-end 8;
 }
