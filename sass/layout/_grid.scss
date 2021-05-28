@@ -3,6 +3,13 @@
   grid-template-rows: 80vh repeat(4, -webkit-min-content);
   grid-template-rows: 80vh repeat(4, min-content);
 
-  grid-template-columns: repeat(7, minmax(-webkit-min-content, 1fr)) 1fr;
-  grid-template-columns: repeat(7, minmax(min-content, 1fr)) 1fr;
+  grid-template-columns: [center-start] repeat(
+      7,
+      [col-start] minmax(-webkit-min-content, 1fr) [col-end]
+    ) [center-end] 1fr;
+
+  grid-template-columns: [center-start] repeat(
+      7,
+      [col-start] minmax(min-content, 1fr) [col-end]
+    ) [center-end] 1fr;
 }
