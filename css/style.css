@@ -72,14 +72,13 @@ $breakpoint argument choices:
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  box-sizing: border-box; }
 
 body {
-  box-sizing: border-box;
   padding: 3rem; }
 
 ::-moz-selection {
@@ -253,20 +252,10 @@ body {
   @media only screen and (max-width: 56.25em) {
     .footer {
       padding: 8rem 0; } }
-  .footer__logo-box {
-    text-align: center;
-    margin-bottom: 8rem; }
-    @media only screen and (max-width: 56.25em) {
-      .footer__logo-box {
-        margin-bottom: 6rem; } }
-  .footer__logo {
-    width: 15rem;
-    height: auto; }
   .footer__navigation {
     padding-top: 0.5rem;
     display: grid;
-    grid-template-columns: repeat(4, minmax(20rem, 1fr));
-    display: grid;
+    grid-template-columns: repeat(5, minmax(20rem, 1fr));
     grid-gap: 0.5rem;
     align-items: center; }
     @media only screen and (max-width: 56.25em) {
@@ -301,6 +290,13 @@ body {
         width: 100%;
         float: none; } }
 
+.container {
+  display: grid;
+  grid-template-rows: 80vh repeat(4, -webkit-min-content);
+  grid-template-rows: 80vh repeat(4, min-content);
+  grid-template-columns: repeat(7, minmax(-webkit-min-content, 1fr)) 1fr;
+  grid-template-columns: repeat(7, minmax(min-content, 1fr)) 1fr; }
+
 /*
 background-image: linear-gradient(51deg, #25bfcb, #e628a4);
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 60%, 50% 100%, 0 60%);
@@ -323,14 +319,17 @@ background-image: linear-gradient(51deg, #25bfcb, #e628a4);
     transform: translate(-55%, -55%);
     text-align: center; }
 
-.skills__set {
-  display: grid;
-  grid-column: full-start / col-end 6;
-  justify-content: center;
+.skillsset {
   background-color: red; }
 
-.hero__photo {
-  background-color: #101d2c;
-  grid-column: col-start 7 / full-end;
-  padding: 3rem;
-  display: grid; }
+.projects {
+  background-color: blue; }
+
+.aboutme__photos {
+  background-color: yellow; }
+
+.aboutme__text {
+  background-color: purple; }
+
+.contact {
+  background-color: salmon; }

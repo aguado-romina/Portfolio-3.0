@@ -1,13 +1,21 @@
-.skills__set {
-  display: grid;
-  grid-column: full-start / col-end 6;
-  justify-content: center;
+.skillsset {
   background-color: red;
 }
 
-.hero__photo {
-  background-color: #101d2c;
-  grid-column: col-start 7 / full-end;
-  padding: 3rem;
-  display: grid;
+.projects {
+  background-color: blue;
+}
+
+.aboutme {
+  &__photos {
+    background-color: yellow;
+  }
+
+  &__text {
+    background-color: purple;
+  }
+}
+
+.contact {
+  background-color: salmon;
 }

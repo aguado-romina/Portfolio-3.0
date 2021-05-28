@@ -3,16 +3,16 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+
   box-sizing: inherit;
 }
 
 html {
   font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5%
+  box-sizing: border-box;
 }
 
 body {
-  box-sizing: border-box;
   padding: 3rem;
 }
 
@@ -24,4 +24,24 @@ body {
 ::selection {
   background-color: $color-primary;
   color: $color-white;
+}
+
+.container {
+  // display: grid;
+  // grid-template-rows: 80vh -webkit-min-content 40vw repeat(3, -webkit-min-content);
+  // grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  // grid-template-columns:
+  //   [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr)
+  //   [center-start] repeat(
+  //     8,
+  //     [col-start] minmax(-webkit-min-content, 14rem) [col-end]
+  //   ) [center-end] minmax(6rem, 1fr)
+  //   [full-end];
+  // grid-template-columns:
+  //   [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr)
+  //   [center-start] repeat(
+  //     8,
+  //     [col-start] minmax(min-content, 14rem) [col-end]
+  //   ) [center-end] minmax(6rem, 1fr)
+  //   [full-end];
 }

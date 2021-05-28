@@ -1,5 +1,6 @@
 .footer {
   background-color: $color-gray-dark-3;
+
   color: $color-gray-light-1;
   padding: 10rem 0;
   font-size: 2.4rem;
@@ -9,26 +10,12 @@
     padding: 8rem 0;
   }
 
-  &__logo-box {
-    text-align: center;
-    margin-bottom: 8rem;
-
-    @include respond(tab-port) {
-      margin-bottom: 6rem;
-    }
-  }
-
-  &__logo {
-    width: 15rem;
-    height: auto;
-  }
-
   &__navigation {
     padding-top: 0.5rem;
 
     display: grid;
-    grid-template-columns: repeat(4, minmax(20rem, 1fr));
-    display: grid;
+    grid-template-columns: repeat(5, minmax(20rem, 1fr));
+
     grid-gap: 0.5rem;
     align-items: center;
 
