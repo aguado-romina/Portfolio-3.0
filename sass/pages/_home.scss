@@ -1,6 +1,23 @@
 .skillsset {
-  background-color: red;
+  display: grid;
   grid-column: center-start / col-end 4;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+
+  &__icon-location-1 {
+  }
+
+  &__icon-location-2 {
+  }
+
+  &__icon-location-3 {
+  }
+
+  &__icon-location-4 {
+  }
+
+  &__icon-location-5 {
+  }
 }
 
 .projects {

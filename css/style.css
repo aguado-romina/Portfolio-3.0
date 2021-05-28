@@ -178,7 +178,7 @@ body {
   position: relative;
   font-size: 1.6rem;
   font-weight: 600;
-  margin-top: 10rem;
+  margin-top: 5rem;
   border: none;
   cursor: pointer; }
 
@@ -234,7 +234,7 @@ body {
   transition: all 0.2s; }
 
 .btn-text:hover {
-  background-color: #e628a4;
+  background-color: #ff45be;
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px); }
@@ -323,8 +323,10 @@ background-image: linear-gradient(51deg, #25bfcb, #e628a4);
     text-align: center; }
 
 .skillsset {
-  background-color: red;
-  grid-column: center-start / col-end 4; }
+  display: grid;
+  grid-column: center-start / col-end 4;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto); }
 
 .projects {
   background-color: blue;
