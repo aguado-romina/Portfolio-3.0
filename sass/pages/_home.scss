@@ -10,41 +10,73 @@
   &__icon-1 {
     width: 5rem;
     height: 5rem;
+    transition: all 0.2s;
+    &:hover {
+      transform: translateY(-1.5rem) scale(1.03);
+    }
   }
 
   &__icon-2 {
     width: 5rem;
     height: 5rem;
+    transition: all 0.2s;
+    &:hover {
+      transform: translateY(-1.5rem) scale(1.03);
+    }
   }
 
   &__icon-3 {
     width: 5rem;
     height: 5rem;
+    transition: all 0.2s;
+    &:hover {
+      transform: translateY(-1.5rem) scale(1.03);
+    }
   }
 
   &__icon-4 {
     width: 5rem;
     height: 5rem;
+    transition: all 0.2s;
+    &:hover {
+      transform: translateY(-1.5rem) scale(1.03);
+    }
   }
 
   &__icon-5 {
     width: 5rem;
     height: 5rem;
+    transition: all 0.2s;
+    &:hover {
+      transform: translateY(-1.5rem) scale(1.03);
+    }
   }
 
   &__icon-6 {
     width: 5rem;
     height: 5rem;
+    transition: all 0.2s;
+    &:hover {
+      transform: translateY(-1.5rem) scale(1.03);
+    }
   }
 
   &__icon-7 {
     width: 5rem;
     height: 5rem;
+    transition: all 0.2s;
+    &:hover {
+      transform: translateY(-1.5rem) scale(1.03);
+    }
   }
 
   &__icon-8 {
     width: 5rem;
     height: 5rem;
+    transition: all 0.2s;
+    &:hover {
+      transform: translateY(-1.5rem) scale(1.03);
+    }
   }
 }
 
@@ -63,7 +95,46 @@
   grid-column: col-start 5 / col-end 8;
 }
 
-.contact {
+.contactform {
   background-color: salmon;
-  grid-column: center-start / col-end 8;
+  grid-column: center-start / col-end 4;
+}
+
+.contactinfo {
+  grid-column: col-start 5 / col-end 8;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 1.5rem;
+  margin: 2rem;
+  align-items: center;
+  fill: $color-primary;
+
+  &__icon-1 {
+    width: 5rem;
+    height: 5rem;
+    transform: translatex(20rem);
+  }
+  &__icon-2 {
+    width: 5rem;
+    height: 5rem;
+    transform: translatex(20rem);
+  }
+  &__icon-3 {
+    width: 5rem;
+    height: 5rem;
+    transform: translatex(20rem);
+  }
+
+  &__text-1 {
+    transform: translatex(-15rem);
+  }
+
+  &__text-2 {
+    transform: translatex(-15rem);
+  }
+
+  &__text-3 {
+    transform: translatex(-15rem);
+  }
 }

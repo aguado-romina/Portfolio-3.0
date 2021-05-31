@@ -246,7 +246,7 @@ body {
 .footer {
   background-color: #333;
   color: #f7f7f7f7;
-  padding: 10rem 0;
+  padding: 8rem 0;
   font-size: 2.4rem;
   grid-column: center-start / col-end 8; }
   @media only screen and (max-width: 56.25em) {
@@ -255,7 +255,7 @@ body {
   .footer__navigation {
     padding-top: 0.5rem;
     display: grid;
-    grid-template-columns: repeat(5, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     grid-gap: 0.5rem;
     align-items: center; }
     @media only screen and (max-width: 56.25em) {
@@ -333,28 +333,52 @@ background-image: linear-gradient(51deg, #25bfcb, #e628a4);
   align-items: center; }
   .skillsset__icon-1 {
     width: 5rem;
-    height: 5rem; }
+    height: 5rem;
+    transition: all 0.2s; }
+    .skillsset__icon-1:hover {
+      transform: translateY(-1.5rem) scale(1.03); }
   .skillsset__icon-2 {
     width: 5rem;
-    height: 5rem; }
+    height: 5rem;
+    transition: all 0.2s; }
+    .skillsset__icon-2:hover {
+      transform: translateY(-1.5rem) scale(1.03); }
   .skillsset__icon-3 {
     width: 5rem;
-    height: 5rem; }
+    height: 5rem;
+    transition: all 0.2s; }
+    .skillsset__icon-3:hover {
+      transform: translateY(-1.5rem) scale(1.03); }
   .skillsset__icon-4 {
     width: 5rem;
-    height: 5rem; }
+    height: 5rem;
+    transition: all 0.2s; }
+    .skillsset__icon-4:hover {
+      transform: translateY(-1.5rem) scale(1.03); }
   .skillsset__icon-5 {
     width: 5rem;
-    height: 5rem; }
+    height: 5rem;
+    transition: all 0.2s; }
+    .skillsset__icon-5:hover {
+      transform: translateY(-1.5rem) scale(1.03); }
   .skillsset__icon-6 {
     width: 5rem;
-    height: 5rem; }
+    height: 5rem;
+    transition: all 0.2s; }
+    .skillsset__icon-6:hover {
+      transform: translateY(-1.5rem) scale(1.03); }
   .skillsset__icon-7 {
     width: 5rem;
-    height: 5rem; }
+    height: 5rem;
+    transition: all 0.2s; }
+    .skillsset__icon-7:hover {
+      transform: translateY(-1.5rem) scale(1.03); }
   .skillsset__icon-8 {
     width: 5rem;
-    height: 5rem; }
+    height: 5rem;
+    transition: all 0.2s; }
+    .skillsset__icon-8:hover {
+      transform: translateY(-1.5rem) scale(1.03); }
 
 .projects {
   background-color: blue;
@@ -368,6 +392,34 @@ background-image: linear-gradient(51deg, #25bfcb, #e628a4);
   background-color: purple;
   grid-column: col-start 5 / col-end 8; }
 
-.contact {
+.contactform {
   background-color: salmon;
-  grid-column: center-start / col-end 8; }
+  grid-column: center-start / col-end 4; }
+
+.contactinfo {
+  grid-column: col-start 5 / col-end 8;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 1.5rem;
+  margin: 2rem;
+  align-items: center;
+  fill: #e628a4; }
+  .contactinfo__icon-1 {
+    width: 5rem;
+    height: 5rem;
+    transform: translatex(20rem); }
+  .contactinfo__icon-2 {
+    width: 5rem;
+    height: 5rem;
+    transform: translatex(20rem); }
+  .contactinfo__icon-3 {
+    width: 5rem;
+    height: 5rem;
+    transform: translatex(20rem); }
+  .contactinfo__text-1 {
+    transform: translatex(-15rem); }
+  .contactinfo__text-2 {
+    transform: translatex(-15rem); }
+  .contactinfo__text-3 {
+    transform: translatex(-15rem); }
