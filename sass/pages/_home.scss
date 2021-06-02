@@ -4,7 +4,7 @@
   grid-template-columns: repeat(8, auto);
   // grid-template-rows: repeat(2, auto);
   grid-gap: 4rem;
-  margin: 2rem;
+  margin: 4rem;
   align-items: center;
 
   &__icon-1 {
@@ -98,13 +98,17 @@
 .contactform {
   background-color: salmon;
   grid-column: center-start / col-end 4;
+  display: grid;
+  grid-gap: 1.5rem;
+  margin: 2rem;
+  align-items: center;
 }
 
 .contactinfo {
   grid-column: col-start 5 / col-end 8;
   display: grid;
   grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(3, auto);
+  grid-template-rows: repeat(4, auto);
   grid-gap: 1.5rem;
   margin: 2rem;
   align-items: center;

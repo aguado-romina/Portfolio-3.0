@@ -3,7 +3,7 @@
 
   color: $color-gray-light-1;
   padding: 8rem 0;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   grid-column: center-start / col-end 8;
 
   @include respond(tab-port) {
@@ -60,7 +60,7 @@
   &__copyright {
     // border-top: 1px solid $color-gray-dark;
     padding-top: 2rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 
     margin-bottom: 1rem;
     margin-right: auto;
