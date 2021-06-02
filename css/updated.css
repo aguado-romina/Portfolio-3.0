@@ -1,0 +1,92 @@
+/* This is used to reset all the margin padding which is by default added to block level elements like heading etc */
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: #000;
+}
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: red;
+  height: 80px;
+}
+.hero__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.hero__section--bg {
+  background-image: url("../img/header__curve.svg"), linear-gradient(51deg, #25bfcb, #e628a4);
+  background-position: 50% 100%, 0px 0px;
+  background-size: cover, auto;
+  background-repeat: no-repeat, repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 80px 5% 180px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hero__section--content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(0, 1fr))[2];
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 1200px;
+}
+.hero__left--cont {
+  padding-top: 150px;
+}
+.hero__left--cont .hero__title {
+  color: #fff;
+  font-size: 50px;
+  line-height: 64px;
+  width: 90%;
+  text-transform: uppercase;
+}
+.hero__left--cont .hero__title span {
+  display: block;
+}
+.hero__left--cont .resume__download--button {
+  margin: 40px 0;
+}
+.hero__right--cont {
+  text-align: right;
+}
+.hero__right--cont .hero__img--cont {
+  position: relative;
+  z-index: 1;
+  width: 70%;
+  display: inline-block;
+}
+.hero__right--cont .hero__img--cont img {
+  max-width: 100%;
+}
+.primary__button {
+  padding: 20px 35px;
+  border-radius: 30px;
+  background-color: #e628a4;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
