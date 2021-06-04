@@ -24,12 +24,12 @@ $breakpoint argument choices:
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-10rem); }
+    transform: translateX(-40rem); }
   80% {
     transform: translateX(1rem); }
   100% {
     opacity: 1;
-    transform: translate(0); } }
+    transform: translate(10); } }
 
 @-webkit-keyframes moveInRight {
   0% {
@@ -85,21 +85,6 @@ body {
   line-height: 1.7;
   color: #777; }
 
-.container {
-  display: grid;
-  grid-template-rows: 80vh -webkit-min-content 40vw repeat(3, -webkit-min-content);
-  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
-  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(-webkit-min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(-webkit-min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(-webkit-min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(-webkit-min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(-webkit-min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(-webkit-min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(-webkit-min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(-webkit-min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(-webkit-min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
-
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
@@ -111,12 +96,6 @@ body {
     font-size: 6rem;
     font-weight: 700;
     letter-spacing: 0.5rem;
-    -webkit-animation-name: moveInLeft;
-    animation-name: moveInLeft;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
     /*
         animation-delay: 3s;
         animation-iteration-count: 3;
@@ -198,14 +177,6 @@ body {
   .btn input[type="submit"]::after {
     background-color: #e628a4; }
 
-.btn--green {
-  background-color: #e628a4;
-  color: #fff; }
-  .btn--green::after {
-    background-color: #e628a4; }
-  .btn--green--submit {
-    margin-left: 20rem; }
-
 .btn::after {
   content: "";
   display: inline-block;
@@ -224,25 +195,6 @@ body {
   -webkit-animation-fill-mode: backwards;
   animation-fill-mode: backwards; }
 
-.btn-text:link, .btn-text:visited {
-  font-size: 1.6rem;
-  color: #fff;
-  display: inline-block;
-  text-decoration: none;
-  border-bottom: 1px solid #e628a4;
-  padding: 3px;
-  transition: all 0.2s; }
-
-.btn-text:hover {
-  background-color: #ff45be;
-  color: #fff;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px); }
-
-.btn-text:active {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  transform: translateY(0); }
-
 input[type="submit"] {
   border: none;
   text-transform: uppercase;
@@ -253,20 +205,6 @@ input[type="submit"] {
   font-size: 1.6rem;
   font-weight: 500;
   grid-row: 4 / -1; }
-
-.primary__button {
-  padding: 20px 35px;
-  border-radius: 30px;
-  background-color: #e628a4;
-  transition: all 300ms ease;
-  color: #fff;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  display: inline-block;
-  text-decoration: none;
-  cursor: pointer; }
 
 .footer {
   background-color: #333;
@@ -386,32 +324,16 @@ input[type="email"] {
   margin-bottom: 0px;
   color: #fff;
   font-size: 65px;
-  line-height: 57px; }
+  line-height: 57px;
+  -webkit-animation-name: moveInLeft;
+  animation-name: moveInLeft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out; }
 
 .top-margin.more {
   margin-top: 40px; }
-
-.button {
-  padding: 20px 35px;
-  border-radius: 30px;
-  background-color: #e628a4;
-  transition: all 300ms ease;
-  color: #fff;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase; }
-
-.w-button {
-  display: inline-block;
-  padding: 9px 15px;
-  background-color: #3898ec;
-  color: white;
-  border: 0;
-  line-height: inherit;
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 0; }
 
 .photo-wrapper {
   position: relative;
