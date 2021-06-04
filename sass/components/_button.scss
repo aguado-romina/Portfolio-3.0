@@ -115,3 +115,18 @@ input[type="submit"] {
   font-weight: 500;
   grid-row: 4 / -1;
 }
+
+.primary__button {
+  padding: 20px 35px;
+  border-radius: 30px;
+  background-color: #e628a4;
+  transition: all 300ms ease;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
