@@ -313,10 +313,10 @@ input[type="email"] {
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
-  margin-top: -15rem; }
+  margin-top: 15rem; }
 
 .left-part {
-  margin-top: -50px; }
+  margin-top: -20rem; }
 
 .hero-title {
   width: 89%;
@@ -338,7 +338,8 @@ input[type="email"] {
 .photo-wrapper {
   position: relative;
   z-index: 1;
-  width: 80%; }
+  width: 80%;
+  margin-top: -1.5rem; }
 
 img {
   display: inline-block;
@@ -432,12 +433,22 @@ img {
   grid-column: col-start 1 / col-end 8; }
 
 .aboutmephotos {
-  background-color: yellow;
   grid-column: center-start / col-end 4; }
 
+.rounder-image {
+  border-radius: 5%;
+  margin: 7rem 10rem;
+  width: 70%; }
+
 .aboutmetext {
-  background-color: purple;
-  grid-column: col-start 5 / col-end 8; }
+  grid-column: col-start 5 / col-end 8;
+  font-size: 3rem;
+  margin: 5rem;
+  padding: 5rem;
+  color: #777; }
+
+.bold {
+  font-weight: bold; }
 
 .contactform {
   background-color: salmon;
@@ -453,7 +464,7 @@ img {
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(4, auto);
   grid-gap: 1.5rem;
-  margin: 2rem;
+  margin: 2rem 1rem;
   align-items: center;
   fill: #e628a4; }
   .contactinfo__icon-1 {
