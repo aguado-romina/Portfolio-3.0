@@ -1,7 +1,7 @@
 .container {
   display: grid;
-  grid-template-rows: 80vh repeat(4, -webkit-min-content);
-  grid-template-rows: 80vh repeat(4, min-content);
+  // grid-template-rows: 80vh repeat(4, -webkit-min-content);
+  // grid-template-rows: 80vh repeat(4, min-content);
 
   grid-template-columns:
     [center-start] repeat(
@@ -27,6 +27,13 @@
   grid-template-columns:
     [center-start] repeat(
       8,
+      [col-start] minmax(-webkit-min-content, 1fr) [col-end]
+    )
+    [center-end] 1fr;
+
+  grid-template-columns:
+    [center-start] repeat(
+      7,
       [col-start] minmax(-webkit-min-content, 1fr) [col-end]
     )
     [center-end] 1fr;
