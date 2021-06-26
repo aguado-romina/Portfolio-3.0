@@ -108,49 +108,29 @@
 }
 
 .contactform {
-  grid-column: center-start / col-end 4;
+  margin: 1rem 1rem;
+  padding-top: 2.5rem;
+  grid-column: col-start 1 / col-end 4;
   display: grid;
   grid-gap: 1rem;
+  vertical-align: middle;
 
-  align-items: center;
-  margin: 2rem 35rem;
+  grid-template-columns: repeat(2, auto);
 }
 
 .contactinfo {
   grid-column: col-start 5 / col-end 8;
   display: grid;
   grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(4, auto);
+  grid-template-rows: repeat(3, auto);
   grid-gap: 1.5rem;
-  margin: 2rem 1rem;
+  margin: 1rem 1rem;
   align-items: center;
   fill: $color-primary;
 
-  &__icon-1 {
+  &__icon {
     width: 5rem;
     height: 5rem;
-    transform: translatex(20rem);
-  }
-  &__icon-2 {
-    width: 5rem;
-    height: 5rem;
-    transform: translatex(20rem);
-  }
-  &__icon-3 {
-    width: 5rem;
-    height: 5rem;
-    transform: translatex(20rem);
-  }
-
-  &__text-1 {
-    transform: translatex(-15rem);
-  }
-
-  &__text-2 {
-    transform: translatex(-15rem);
-  }
-
-  &__text-3 {
-    transform: translatex(-15rem);
+    transform: translatex(10rem);
   }
 }
